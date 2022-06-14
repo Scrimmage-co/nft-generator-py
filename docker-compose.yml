@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  generate:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    volumes:
+      - ./images:/app/images
+      - ./metadata:/app/metadata
+      - ./trait-layers:/app/trait-layers
+      - ./config.json:/app/config.json
+    entrypoint:
+      - "python"
+      - "generate.py"
+    command:
+      - "--amount"
+      - "3"
+      - "--config"
+      - "./config.json"

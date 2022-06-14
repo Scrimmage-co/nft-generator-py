@@ -1,11 +1,11 @@
 {
   "layers": [
     {
-      "name": "Background",
-      "values": ["Blue", "Orange", "Purple", "Red", "Yellow"],
-      "trait_path": "./trait-layers/backgrounds",
-      "filename": ["blue", "orange", "purple", "red", "yellow"],
-      "weights": [20,20,20,20,20]
+      "name": "Rarity",
+      "values": ["Common", "Uncommon", "Rare", "Mythical", "Legendary"],
+      "trait_path": "./trait-layers/rarity",
+      "filename": ["common", "uncommon", "rare", "mythical", "legendary"],
+      "weights": [50,30,20,9,1]
     },
     {
       "name": "Foreground",
@@ -23,13 +23,8 @@
     }
   ],
   "incompatibilities": [
-    {
-      "layer": "Background",
-      "value": "Blue",
-      "incompatible_with": ["Python Logo 2"]
-    }
   ],
   "baseURI": ".",
-  "name": "NFT #",
-  "description": "This is a description for this NFT series."
+  "name": "Dragon #",
+  "description": ""
 }
